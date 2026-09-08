@@ -1,0 +1,77 @@
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 95vh;
+
+            background-color: rgb(114, 216, 12);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-card {
+            background-color: white;
+            padding: 50px 50px;
+            width: 420px;
+        }
+
+        input {
+            background-color: rgb(229, 218, 218);
+            border: none;
+            padding: 15px;
+            font-size: 14px;
+            width: 100%;
+            height: 40px;
+        }
+
+        button {
+            background-color: rgb(2, 174, 2);
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <div class="login-card">
+
+            <input type="text" placeholder="Name" required>
+            <br><br>
+
+            <input type="text" placeholder="Username" required>
+            <br><br>
+
+             <input type="email" placeholder="Email" required>
+            <br><br>
+
+            <input type="password" placeholder="Password" required>
+            <br><br>
+
+            <input type="password" placeholder="Confirm Password" required>
+            <br><br>
+
+            <button type="submit">REGISTER</button>
+
+            <p justify-content="center" style="text-align: center; margin-top: 20px;">
+            
+                Already registered?
+                <a href="file:///D:/MERN%20full%20stack%20easto%20tech/html%20exercises/login.html" style="text-decoration: none; color: darkgreen;" target="_blank">
+                    Log In
+                </a>
+            </p>
+
+        </div>
+    </form>
+
+</body>
