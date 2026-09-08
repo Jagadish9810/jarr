@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 95vh;
+            background-color: rgb(114, 216, 12);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-card {
+            background-color: white;
+            padding: 50px;
+            width: 420px;
+        }
+
+        input {
+            background-color: rgb(229, 218, 218);
+            border: none;
+            padding: 15px;
+            font-size: 14px;
+            width: 100%;
+            height: 40px;
+        }
+
+        button {
+            background-color: rgb(2, 174, 2);
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form onsubmit="return validateForm()">
+        <div class="login-card">
+
+            <input type="text" id="username" placeholder="Username" required>
+
+            <br><br>
+
+            <input type="password" id="password" placeholder="Password" required>
+
+            <br>
+
+            <p style="text-align: left;">
+                <a href="forgetpassword.html" style="text-decoration: none; color: darkgreen;" target="_blank">
+                    Forget Password?
+                </a>
+            </p>
+
+            <button type="submit">LOGIN</button>
+
+            <p style="text-align: center; margin-top: 20px;">
+                Not registered?
+                <a href="registration.html" style="text-decoration: none; color: darkgreen;" target="_blank">
+                    Create an account
+                </a>
+            </p>
+
+        </div>
+    </form>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "admin" && password === "admin") {
+                alert("Login successful!");
+                return false;
+            } else {
+                alert("Invalid username or password. Please try again.");
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
